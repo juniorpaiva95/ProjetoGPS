@@ -11,21 +11,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta content="" name="description" />
     <meta content="themes-lab" name="author" />
-    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <link rel="shortcut icon" href="/assets/img/favicon.png">
     <!-- END META SECTION -->
     <!-- BEGIN MANDATORY STYLE -->
-    <link href="assets/css/icons/icons.min.css" rel="stylesheet">
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/plugins.min.css" rel="stylesheet">
-    <link href="assets/css/style.min.css" rel="stylesheet">
+    <link href="/assets/css/icons/icons.min.css" rel="stylesheet">
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/css/plugins.min.css" rel="stylesheet">
+    <link href="/assets/css/style.min.css" rel="stylesheet">
     <link href="#" rel="stylesheet" id="theme-color">
     <!-- END  MANDATORY STYLE -->
     <!-- BEGIN PAGE LEVEL STYLE -->
-    <link rel="stylesheet" href="assets/plugins/magnific/magnific-popup.css">    
-    <link rel="stylesheet" href="assets/plugins/datatables/dataTables.css">
-    <link rel="stylesheet" href="assets/plugins/datatables/dataTables.tableTools.css">
+    <link rel="stylesheet" href="/assets/plugins/magnific/magnific-popup.css">    
+    <link rel="stylesheet" href="/assets/plugins/datatables/dataTables.css">
+    <link rel="stylesheet" href="/assets/plugins/datatables/dataTables.tableTools.css">
     <!-- END PAGE LEVEL STYLE -->
-    <script src="assets/plugins/modernizr/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <script src="/assets/plugins/modernizr/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 </head>
 
 <body data-page="product_view">
@@ -145,7 +145,7 @@
                                 <ul class="dropdown-menu-list withScroll" data-height="220">
                                     <li class="clearfix">
                                         <span class="pull-left p-r-5">
-                                            <img src="assets/img/avatars/avatar3.png" alt="avatar 3">
+                                            <img src="/assets/img/avatars/avatar3.png" alt="avatar 3">
                                         </span>
                                         <div class="clearfix">
                                             <div>
@@ -159,7 +159,7 @@
                                     </li>
                                     <li class="clearfix">
                                         <span class="pull-left p-r-5">
-                                            <img src="assets/img/avatars/avatar4.png" alt="avatar 4">
+                                            <img src="/assets/img/avatars/avatar4.png" alt="avatar 4">
                                         </span>
                                         <div class="clearfix">
                                             <div>
@@ -173,7 +173,7 @@
                                     </li>
                                     <li class="clearfix">
                                         <span class="pull-left p-r-5">
-                                            <img src="assets/img/avatars/avatar5.png" alt="avatar 5">
+                                            <img src="/assets/img/avatars/avatar5.png" alt="avatar 5">
                                         </span>
                                         <div class="clearfix">
                                             <div>
@@ -187,7 +187,7 @@
                                     </li>
                                     <li class="clearfix">
                                         <span class="pull-left p-r-5">
-                                            <img src="assets/img/avatars/avatar6.png" alt="avatar 6">
+                                            <img src="/assets/img/avatars/avatar6.png" alt="avatar 6">
                                         </span>
                                         <div class="clearfix">
                                             <div>
@@ -213,7 +213,7 @@
                     <!-- BEGIN USER DROPDOWN -->
                     <li class="dropdown" id="user-header">
                         <a href="#" class="dropdown-toggle c-white" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                            <img src="assets/img/avatars/avatar2.png" alt="user avatar" width="30" class="p-r-5">
+                            <img src="/assets/img/avatars/avatar2.png" alt="user avatar" width="30" class="p-r-5">
                             <span class="username">Bob Nilson</span>
                             <i class="fa fa-angle-down p-r-10"></i>
                         </a>
@@ -258,7 +258,7 @@
                             <div class="chat-popup-inner bg-blue">
                                 <div>
                                     <div class="clearfix w-600">
-                                        <img src="assets/img/avatars/avatar3.png" alt="avatar 3" width="30" class="pull-left img-circle p-r-5">Alexa Johnson</div>
+                                        <img src="/assets/img/avatars/avatar3.png" alt="avatar 3" width="30" class="pull-left img-circle p-r-5">Alexa Johnson</div>
                                     <div class="message m-t-5">Hey you there?</div>
                                 </div>
                             </div>
@@ -610,7 +610,7 @@
         <div id="main-content">
             <div class="page-title">
                 <i class="icon-custom-left"></i>
-                <h3><img class="m-r-20" src="assets/img/various/clothing.png" alt="clothing"><strong>Product 1</strong> <small>update product</small></h3>
+                <h3><img class="m-r-20" src="/assets/img/various/clothing.png" alt="clothing"><strong>Product 1</strong> <small>update product</small></h3>
                 <br>
             </div>
             <div class="row">
@@ -766,8 +766,8 @@
                                         <tbody>
                                             <tr>
                                                 <td style="width:20%">
-                                                    <a href="assets/img/gallery/animal1.jpg" class="magnific" title="Nature 1">
-                                                        <img src="assets/img/gallery/animal1.jpg" alt="animal1" class="img-responsive">
+                                                    <a href="/assets/img/gallery/animal1.jpg" class="magnific" title="Nature 1">
+                                                        <img src="/assets/img/gallery/animal1.jpg" alt="animal1" class="img-responsive">
                                                     </a>
                                                 </td>
                                                 <td>
@@ -788,8 +788,8 @@
                                             </tr>
                                             <tr>
                                                 <td style="width:20%">
-                                                    <a href="assets/img/gallery/animal2.jpg" class="magnific" title="Nature 2">
-                                                        <img src="assets/img/gallery/animal2.jpg" alt="animal2" class="img-responsive">
+                                                    <a href="/assets/img/gallery/animal2.jpg" class="magnific" title="Nature 2">
+                                                        <img src="/assets/img/gallery/animal2.jpg" alt="animal2" class="img-responsive">
                                                     </a>
                                                 </td>
                                                 <td>
@@ -810,8 +810,8 @@
                                             </tr>
                                             <tr>
                                                 <td style="width:20%">
-                                                    <a href="assets/img/gallery/animal3.jpg" class="magnific" title="Nature 3">
-                                                        <img src="assets/img/gallery/animal3.jpg" alt="animal3" class="img-responsive">
+                                                    <a href="/assets/img/gallery/animal3.jpg" class="magnific" title="Nature 3">
+                                                        <img src="/assets/img/gallery/animal3.jpg" alt="animal3" class="img-responsive">
                                                     </a>
                                                 </td>
                                                 <td>
@@ -948,7 +948,7 @@
             <li class="img no-arrow have-message">
                 <span class="inside-chat">
                     <i class="online"></i>
-                    <img src="assets/img/avatars/avatar3.png" alt="avatar 3"/>
+                    <img src="/assets/img/avatars/avatar3.png" alt="avatar 3"/>
                     <span class="chat-name">Alexa Johnson</span>
                     <span class="pull-right badge badge-danger hide">3</span>
                     <span>Los Angeles</span>
@@ -957,7 +957,7 @@
                     <li class="img">
                         <span>
                             <span class="chat-detail">
-                                <img src="assets/img/avatars/avatar3.png" alt="avatar 3"/>
+                                <img src="/assets/img/avatars/avatar3.png" alt="avatar 3"/>
                                 <span class="chat-bubble"><span class="bubble-inner">Hi you!</span></span>
                             </span>
                         </span>
@@ -965,7 +965,7 @@
                     <li class="img">
                         <span>
                             <span class="chat-detail">
-                                <img src="assets/img/avatars/avatar3.png" alt="avatar 3"/>
+                                <img src="/assets/img/avatars/avatar3.png" alt="avatar 3"/>
                                 <span class="chat-bubble"><span class="bubble-inner">You there?</span></span>
                             </span>
                         </span>
@@ -973,7 +973,7 @@
                     <li class="img">
                         <span>
                             <span class="chat-detail">
-                                <img src="assets/img/avatars/avatar3.png" alt="avatar 3"/>
+                                <img src="/assets/img/avatars/avatar3.png" alt="avatar 3"/>
                                 <span class="chat-bubble">
                                     <span class="bubble-inner">Let me know when you come back</span>
                                 </span>
@@ -990,7 +990,7 @@
             <li class="img no-arrow">
                 <span class="inside-chat">
                     <i class="online"></i>
-                    <img src="assets/img/avatars/avatar2.png" alt="avatar 2"/>
+                    <img src="/assets/img/avatars/avatar2.png" alt="avatar 2"/>
                     <span class="chat-name">Bobby Brown</span>
                     <span>New York</span>
                 </span>
@@ -1005,7 +1005,7 @@
             <li class="img no-arrow">
                 <span class="inside-chat">
                     <i class="busy"></i>
-                    <img src="assets/img/avatars/avatar13.png" alt="avatar 13"/>
+                    <img src="/assets/img/avatars/avatar13.png" alt="avatar 13"/>
                     <span class="chat-name">Fred Smith</span>
                     <span>Atlanta</span>
                 </span>
@@ -1020,7 +1020,7 @@
             <li class="img no-arrow">
                 <span class="inside-chat">
                     <i class="away"></i>
-                    <img src="assets/img/avatars/avatar4.png" alt="avatar 4"/>
+                    <img src="/assets/img/avatars/avatar4.png" alt="avatar 4"/>
                     <span class="chat-name">James Miller</span>
                     <span>Seattle</span>
                 </span>
@@ -1035,7 +1035,7 @@
             <li class="img no-arrow">
                 <span class="inside-chat">
                     <i class="online"></i>
-                    <img src="assets/img/avatars/avatar5.png" alt="avatar 5"/>
+                    <img src="/assets/img/avatars/avatar5.png" alt="avatar 5"/>
                     <span class="chat-name">Jefferson Jackson</span>
                     <span>Los Angeles</span>
                 </span>
@@ -1052,7 +1052,7 @@
             <li class="img no-arrow">
                 <span class="inside-chat">
                     <i class="offline"></i>
-                    <img src="assets/img/avatars/avatar6.png" alt="avatar 6"/>
+                    <img src="/assets/img/avatars/avatar6.png" alt="avatar 6"/>
                     <span class="chat-name">Jordan</span>
                     <span>Savannah</span>
                 </span>
@@ -1067,7 +1067,7 @@
             <li class="img no-arrow">
                 <span class="inside-chat">
                     <i class="offline"></i>
-                    <img src="assets/img/avatars/avatar7.png" alt="avatar 7"/>
+                    <img src="/assets/img/avatars/avatar7.png" alt="avatar 7"/>
                     <span class="chat-name">Kim Addams</span>
                     <span>Birmingham</span>
                 </span>
@@ -1082,7 +1082,7 @@
             <li class="img no-arrow">
                 <span class="inside-chat">
                     <i class="offline"></i>
-                    <img src="assets/img/avatars/avatar8.png" alt="avatar 8"/>
+                    <img src="/assets/img/avatars/avatar8.png" alt="avatar 8"/>
                     <span class="chat-name">Meagan Miller</span>
                     <span>San Francisco</span>
                 </span>
@@ -1097,7 +1097,7 @@
             <li class="img no-arrow">
                 <span class="inside-chat">
                         <i class="offline"></i>
-                        <img src="assets/img/avatars/avatar9.png" alt="avatar 9"/>
+                        <img src="/assets/img/avatars/avatar9.png" alt="avatar 9"/>
                         <span class="chat-name">Melissa Johnson</span>
                         <span>Austin</span>
                     </span>
@@ -1112,7 +1112,7 @@
             <li class="img no-arrow">
                 <span class="inside-chat">
                     <i class="offline"></i>
-                    <img src="assets/img/avatars/avatar12.png" alt="avatar 12"/>
+                    <img src="/assets/img/avatars/avatar12.png" alt="avatar 12"/>
                     <span class="chat-name">Nicole Smith</span>
                     <span>San Diego</span>
                 </span>
@@ -1127,7 +1127,7 @@
             <li class="img no-arrow">
                 <span class="inside-chat">
                     <i class="offline"></i>
-                    <img src="assets/img/avatars/avatar11.png" alt="avatar 11"/>
+                    <img src="/assets/img/avatars/avatar11.png" alt="avatar 11"/>
                     <span class="chat-name">Samantha Harris</span>
                     <span>Salt Lake City</span>
                 </span>
@@ -1142,7 +1142,7 @@
             <li class="img no-arrow">
                 <span class="inside-chat">
                     <i class="offline"></i>
-                    <img src="assets/img/avatars/avatar10.png" alt="avatar 10"/>
+                    <img src="/assets/img/avatars/avatar10.png" alt="avatar 10"/>
                     <span class="chat-name">Scott Thomson</span>
                     <span>Los Angeles</span>
                 </span>
@@ -1158,26 +1158,26 @@
     </nav>
     <!-- END CHAT MENU -->
     <!-- BEGIN MANDATORY SCRIPTS -->
-    <script src="assets/plugins/jquery-1.11.js"></script>
-    <script src="assets/plugins/jquery-migrate-1.2.1.js"></script>
-    <script src="assets/plugins/jquery-ui/jquery-ui-1.10.4.min.js"></script>
-    <script src="assets/plugins/jquery-mobile/jquery.mobile-1.4.2.js"></script>
-    <script src="assets/plugins/bootstrap/bootstrap.min.js"></script>
-    <script src="assets/plugins/bootstrap-dropdown/bootstrap-hover-dropdown.min.js"></script>
-    <script src="assets/plugins/bootstrap-select/bootstrap-select.js"></script>
-    <script src="assets/plugins/mcustom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="assets/plugins/mmenu/js/jquery.mmenu.min.all.js"></script>
-    <script src="assets/plugins/nprogress/nprogress.js"></script>
-    <script src="assets/plugins/charts-sparkline/sparkline.min.js"></script>
-    <script src="assets/plugins/breakpoints/breakpoints.js"></script>
-    <script src="assets/plugins/numerator/jquery-numerator.js"></script>
-    <script src="assets/plugins/jquery.cookie.min.js" type="text/javascript"></script>
+    <script src="/assets/plugins/jquery-1.11.js"></script>
+    <script src="/assets/plugins/jquery-migrate-1.2.1.js"></script>
+    <script src="/assets/plugins/jquery-ui/jquery-ui-1.10.4.min.js"></script>
+    <script src="/assets/plugins/jquery-mobile/jquery.mobile-1.4.2.js"></script>
+    <script src="/assets/plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="/assets/plugins/bootstrap-dropdown/bootstrap-hover-dropdown.min.js"></script>
+    <script src="/assets/plugins/bootstrap-select/bootstrap-select.js"></script>
+    <script src="/assets/plugins/mcustom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="/assets/plugins/mmenu/js/jquery.mmenu.min.all.js"></script>
+    <script src="/assets/plugins/nprogress/nprogress.js"></script>
+    <script src="/assets/plugins/charts-sparkline/sparkline.min.js"></script>
+    <script src="/assets/plugins/breakpoints/breakpoints.js"></script>
+    <script src="/assets/plugins/numerator/jquery-numerator.js"></script>
+    <script src="/assets/plugins/jquery.cookie.min.js" type="text/javascript"></script>
     <!-- END MANDATORY SCRIPTS -->
     <!-- BEGIN PAGE LEVEL SCRIPTS -->
-    <script src="assets/plugins/magnific/jquery.magnific-popup.min.js"></script>>
-    <script src="assets/js/ecommerce.js"></script>
+    <script src="/assets/plugins/magnific/jquery.magnific-popup.min.js"></script>>
+    <script src="/assets/js/ecommerce.js"></script>
     <!-- END  PAGE LEVEL SCRIPTS -->
-    <script src="assets/js/application.js"></script>
+    <script src="/assets/js/application.js"></script>
 </body>
 
 </html>

@@ -1,5 +1,4 @@
 $(function () {
-
 /*------------------------------------------------------------------------------------*/
 /*------------------------------  ECOMMERCE DASHBOARD --------------------------------*/
 
@@ -129,9 +128,8 @@ $(function () {
     /*-----------------------------------  PRODUCTS --------------------------------------*/
 
     if($('body').data('page') == 'products'){
-        
         var opt = {};
-  
+
          // Tools: export to Excel, CSV, PDF & Print
         opt.sDom = "<'row m-t-10'<'col-md-6'f><'col-md-6'T>r>t<'row'<'col-md-6'><'col-md-6 align-right'p>>",
         opt.oLanguage = { "sSearch": "" } ,
@@ -142,9 +140,9 @@ $(function () {
             "aButtons": ["csv", "xls", "pdf", "print"]
         };
         opt.aoColumnDefs = [
-              { 'bSortable': false, 'aTargets': [ 6,7,8,9 ] }
+              { 'bSortable': false, 'aTargets': [ 5,6,7 ] }
            ];
-        
+
 
         var oTable = $('#products-table').dataTable(opt);
         oTable.fnDraw();
@@ -158,8 +156,23 @@ $(function () {
             if (confirm("Are you sure to delete this product ?") == false) {
                 return;
             }
+
             var nRow = $(this).parents('tr')[0];
-            oTable.fnDeleteRow(nRow);
+            var idRow = nRow.children[0].innerText;
+            $.ajax({
+                url: "/produto/" + idRow,
+                type: "delete",
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                success: function (e) {
+                    alert("Deletado com sucesso!");
+                    oTable.fnDeleteRow(nRow);
+                }
+            });
+
+
+
             // alert("Deleted! Do not forget to do some ajax to sync with backend :)");
         });
 
