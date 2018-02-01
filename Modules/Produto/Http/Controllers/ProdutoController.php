@@ -80,7 +80,9 @@ class ProdutoController extends Controller
      * Remove the specified resource from storage.
      * @return Response
      */
-    public function destroy()
+    public function destroy(Produto $produto)
     {
+        $produto->delete();
+        return \response("Produto deletado com sucesso!",200);
     }
 }

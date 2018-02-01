@@ -71,12 +71,6 @@
                                             <strong>Product</strong>
                                         </th>
                                         <th>
-                                            <strong>Reference</strong>
-                                        </th>
-                                        <th>
-                                            <strong>Category</strong>
-                                        </th>
-                                        <th>
                                             <strong>Price</strong>
                                         </th>
                                         <th>
@@ -102,8 +96,6 @@
                                             <tr>
                                                 <td>{{$p->id}}</td>
                                                 <td>{{ $p->nome }}</td>
-                                                <td>SV 456 878 647</td>
-                                                <td>Women / Underwear</td>
                                                 <td><strong>R$ {{ $p->preco }}</strong></td>
                                                 <td>{{ $p->created_at }}</td>
                                                 <td class="color-{{$p->qtd_estq > $p->qtd_estq_min ? 'sucess': 'danger' }}">
