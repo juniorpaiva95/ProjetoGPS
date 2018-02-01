@@ -113,7 +113,7 @@
                             <ul class="dropdown-menu-list withScroll" data-height="220">
                                 <li class="clearfix">
                                         <span class="pull-left p-r-5">
-                                            <img src="assets/img/avatars/avatar3.png" alt="avatar 3">
+                                            <img src="/assets/img/avatars/avatar3.png" alt="avatar 3">
                                         </span>
                                     <div class="clearfix">
                                         <div>
@@ -127,7 +127,7 @@
                                 </li>
                                 <li class="clearfix">
                                         <span class="pull-left p-r-5">
-                                            <img src="assets/img/avatars/avatar4.png" alt="avatar 4">
+                                            <img src="/assets/img/avatars/avatar4.png" alt="avatar 4">
                                         </span>
                                     <div class="clearfix">
                                         <div>
@@ -141,7 +141,7 @@
                                 </li>
                                 <li class="clearfix">
                                         <span class="pull-left p-r-5">
-                                            <img src="assets/img/avatars/avatar5.png" alt="avatar 5">
+                                            <img src="/assets/img/avatars/avatar5.png" alt="avatar 5">
                                         </span>
                                     <div class="clearfix">
                                         <div>
@@ -155,7 +155,7 @@
                                 </li>
                                 <li class="clearfix">
                                         <span class="pull-left p-r-5">
-                                            <img src="assets/img/avatars/avatar6.png" alt="avatar 6">
+                                            <img src="/assets/img/avatars/avatar6.png" alt="avatar 6">
                                         </span>
                                     <div class="clearfix">
                                         <div>
@@ -181,7 +181,7 @@
                 <!-- BEGIN USER DROPDOWN -->
                 <li class="dropdown" id="user-header">
                     <a href="#" class="dropdown-toggle c-white" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                        <img src="assets/img/avatars/avatar2.png" alt="user avatar" width="30" class="p-r-5">
+                        <img src="/assets/img/avatars/avatar2.png" alt="user avatar" width="30" class="p-r-5">
                         <span class="username">{{ Auth::user()->name }}</span>
                         <i class="fa fa-angle-down p-r-10"></i>
                     </a>
@@ -232,7 +232,7 @@
                         <div class="chat-popup-inner bg-blue">
                             <div>
                                 <div class="clearfix w-600">
-                                    <img src="assets/img/avatars/avatar3.png" alt="avatar 3" width="30" class="pull-left img-circle p-r-5">Alexa Johnson</div>
+                                    <img src="/assets/img/avatars/avatar3.png" alt="avatar 3" width="30" class="pull-left img-circle p-r-5">Alexa Johnson</div>
                                 <div class="message m-t-5">Hey you there?</div>
                             </div>
                         </div>

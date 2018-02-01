@@ -8,11 +8,11 @@
                 <a href="#"><i class="glyph-icon flaticon-shopping80"></i><span class="sidebar-text">eCommerce</span>
                     <span class="fa arrow"></span><span class="label label-danger pull-right m-r-20 w-300">New</span></a>
                 <ul class="submenu collapse">
-                    <li class="current">
+                    <li class="">
                         <a href="ecommerce_dashboard.html"><span class="sidebar-text">Dashboard<span class="label label-dark pull-right">Hot</span></span></a>
                     </li>
-                    <li>
-                        <a href="ecommerce_products.html"><span class="sidebar-text">Products</span></a>
+                    <li class="{{ setActive('produto') }}">
+                        <a href="{{route('produto.index')}}"><span class="sidebar-text">Produtos</span></a>
                     </li>
                     <li>
                         <a href="ecommerce_product_view.html"><span class="sidebar-text">Product View</span></a>
