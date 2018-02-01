@@ -44,11 +44,15 @@
                     <hr>
                     <div class="login-form">
                         <!-- BEGIN ERROR BOX -->
-                        <div class="alert alert-danger hide">
-                            <button type="button" class="close" data-dismiss="alert">×</button>
-                            <h4>Error!</h4>
-                            Your Error Message goes here
-                        </div>
+                        @if($errors->any())
+                            <div class="alert alert-danger">
+                                <button type="button" class="close" data-dismiss="alert">×</button>
+                                @foreach ($errors->all() as $error)
+                                    {{ $error }}
+                                @endforeach
+                            </div>
+                        @endif
+
                         <!-- END ERROR BOX -->
                         <form action="/login" method="post">
                             {{ csrf_field() }}
