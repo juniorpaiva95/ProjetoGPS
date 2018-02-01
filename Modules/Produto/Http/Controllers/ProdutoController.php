@@ -5,6 +5,7 @@ namespace Modules\Produto\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
+use Modules\Produto\Entities\Produto;
 
 class ProdutoController extends Controller
 {
@@ -14,7 +15,8 @@ class ProdutoController extends Controller
      */
     public function index()
     {
-        return view('produto::product');
+        $produtos = Produto::all();
+        return view('produto::product')->with(['produtos'=>$produtos]);
     }
 
     /**
@@ -34,7 +36,18 @@ class ProdutoController extends Controller
      */
     public function store(Request $request)
     {
+        $produto = new Produto();
+        $produto->nome = $request->nome;
+        $produto->descricao = $request->descricao;
+        $produto->preco = $request->preco;
+        $produto->qtd_estq = $request->qtd_estq;
+        $produto->qtd_estq_min = $request->qtd_estq_min;
+        $produto->save();
+
+        $request->session()->flash('msg', "Produto {$produto->nome} adicionado com sucesso");
+        return $this->index();
     }
+
 
     /**
      * Show the specified resource.
