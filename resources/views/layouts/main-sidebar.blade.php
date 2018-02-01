@@ -18,7 +18,7 @@
                         <a href="ecommerce_product_view.html"><span class="sidebar-text">Product View</span></a>
                     </li>
                     <li>
-                        <a href="ecommerce_orders.html"><span class="sidebar-text">Orders</span></a>
+                        <a href="{{route('pedido.index')}}"><span class="sidebar-text">Pedidos</span></a>
                     </li>
                     <li>
                         <a href="ecommerce_order_view.html"><span class="sidebar-text">Order View</span></a>
