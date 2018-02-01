@@ -4,7 +4,7 @@
             <li>
                 <a href="{{ route('home') }}"><i class="fa fa-dashboard"></i><span class="sidebar-text">Dashboard</span></a>
             </li>
-            <li class="active current hasSub">
+            <li class="{{ setActive('home') }} hasSub">
                 <a href="#"><i class="glyph-icon flaticon-shopping80"></i><span class="sidebar-text">eCommerce</span>
                     <span class="fa arrow"></span><span class="label label-danger pull-right m-r-20 w-300">New</span></a>
                 <ul class="submenu collapse">

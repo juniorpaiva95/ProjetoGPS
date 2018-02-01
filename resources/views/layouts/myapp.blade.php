@@ -779,15 +779,16 @@
 <script src="assets/plugins/mandatoryJs.min.js"></script>
 <!-- END MANDATORY SCRIPTS -->
 <!-- BEGIN PAGE LEVEL SCRIPTS -->
-<script src="assets/plugins/metrojs/metrojs.min.js"></script>
-<script src="assets/plugins/charts-flot/jquery.flot.js"></script>
-<script src="assets/plugins/charts-flot/jquery.flot.animator.min.js"></script>
-<script src="assets/plugins/charts-flot/jquery.flot.resize.js"></script>
-<script src="assets/plugins/charts-flot/jquery.flot.time.min.js"></script>
-<script src="assets/plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
-<script src="assets/js/ecommerce.js"></script>
+@yield('begin-page-scripts')
+
 <!-- END  PAGE LEVEL SCRIPTS -->
-<script src="assets/js/application.js"></script>
+
+
+<!-- BEGIN PAGE LEVEL SCRIPTS -->
+
+<!-- END PAGE LEVEL SCRIPTS -->
+@yield('end-page-scripts')
+
 </body>
 
 </html>
