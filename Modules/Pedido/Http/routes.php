@@ -7,7 +7,9 @@ Route::group(['middleware' => 'web', 'prefix' => '', 'namespace' => 'Modules\Ped
 });
 
 
-Route::group(['middleware' => ['web','guest'], 'prefix' => '', 'namespace' => 'Modules\Pedido\Http\Controllers'], function()
+Route::group(['middleware' => ['web'], 'prefix' => '', 'namespace' => 'Modules\Pedido\Http\Controllers'], function()
 {
-    Route::get('/add-carrinho/{produto}', 'CarrinhoController@add')->name('carrinho.add');
+    Route::get('/carrinho', 'CarrinhoController@index')->name('carrinho.index');
+    Route::get('/carrinho/{produto}', 'CarrinhoController@add')->name('carrinho.add');
+    Route::delete('/carrinho/{produto}', 'CarrinhoController@remove')->name('carrinho.delete');
 });
