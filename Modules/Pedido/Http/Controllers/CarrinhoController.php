@@ -30,7 +30,7 @@ class CarrinhoController extends Controller
 
     public function add(Request $request, Produto $produto)
     {
-        Cart::add($produto->id, $produto->nome, 1, $produto->preco);
+        Cart::add($produto->id, $produto->nome, 1, $produto->preco, ['nome' => $produto->nome, 'descricao' => $produto->descricao]);
         return redirect()->route('carrinho.index');
     }
 

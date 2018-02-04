@@ -11,6 +11,9 @@
                     <li class="{{ setActive('produto') }}">
                         <a href="{{route('produto.index')}}"><span class="sidebar-text">Produtos</span></a>
                     </li>
+                    <li class="{{ setActive('carrinho') }}">
+                        <a href="{{route('carrinho.index')}}"><span class="sidebar-text">Meu carrinho</span></a>
+                    </li>
                 </ul>
             </li>
         </ul>

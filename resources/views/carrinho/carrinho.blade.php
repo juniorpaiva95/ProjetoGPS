@@ -20,4 +20,6 @@
     <br>
 @endforeach
     {{$total}}
+
+    <a href="{{ route('checkout.index') }}"  class="btn btn-primary">Checkout</a>
 </ul>

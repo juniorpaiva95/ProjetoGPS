@@ -29,7 +29,7 @@
     @yield('end-page-styles')
 </head>
 
-<body data-page="@yield('data-page')">
+<body data-page="@yield('data-page')" class="@yield('body-class')">
 <!-- BEGIN TOP MENU -->
 @include('layouts.top-menu')
 <!-- END TOP MENU -->
