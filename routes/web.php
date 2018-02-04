@@ -12,7 +12,9 @@
 */
 
 Route::get('/', function () {
-    return redirect('login');
+//    return redirect('login');
+    $produtos = \Modules\Produto\Entities\Produto::all();
+    return view('welcome',compact('produtos'));
 //    return view('vendor.pixit.login');
 });
 

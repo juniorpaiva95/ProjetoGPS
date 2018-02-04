@@ -79,13 +79,13 @@
                                         <th style="width:10%;text-align:center">
                                             <strong>Stock</strong>
                                         </th>
-                                        <th class="text-center">
-                                            <strong>Sales</strong>
-                                        </th>
-                                        <th class="text-center">
+                                        {{--<th class="text-center">--}}
+                                            {{--<strong>Sales</strong>--}}
+                                        {{--</th>--}}
+                                        <th class="text-center no-sort">
                                             <strong>Status</strong>
                                         </th>
-                                        <th class="text-center">
+                                        <th class="text-center no-sort">
                                             <strong>Actions</strong>
                                         </th>
                                     </tr>
@@ -98,16 +98,16 @@
                                                 <td>{{ $p->nome }}</td>
                                                 <td><strong>R$ {{ $p->preco }}</strong></td>
                                                 <td>{{ $p->created_at }}</td>
-                                                <td class="color-{{$p->qtd_estq > $p->qtd_estq_min ? 'sucess': 'danger' }}">
+                                                <td class="color-{{$p->qtd_estq >= $p->qtd_estq_min ? 'sucess': 'danger' }}">
                                                     <div class="progress">
-                                                        <div class="progress-bar progress-bar-{{$p->qtd_estq > $p->qtd_estq_min ? 'sucess': 'danger' }}"
-                                                             data-aria-valuetransitiongoal="{{$p->qtd_estq}}">{{$p->qtd_estq}}</div>
+                                                        <div class="progress-bar progress-bar-{{$p->qtd_estq >= $p->qtd_estq_min ? 'sucess': 'danger' }}"
+                                                             data-aria-valuetransitiongoal="{{$p->qtd_estq_min}}">{{$p->qtd_estq}}</div>
                                                     </div>
                                                 </td>
-                                                <td class="text-center">
-                                                    <div class="sparkline" data-sparkline-color="#7BB2B4"
-                                                         data-sparkline-value="[13,14,16,15,4,14,20,14,12,16,11,17,19,16]"></div>
-                                                </td>
+                                                {{--<td class="text-center">--}}
+                                                    {{--<div class="sparkline" data-sparkline-color="#7BB2B4"--}}
+                                                         {{--data-sparkline-value="[13,14,16,15,4,14,20,14,12,16,11,17,19,16]"></div>--}}
+                                                {{--</td>--}}
                                                 <td class="text-center">
                                                     <span class="label label-success w-300">Online</span>
                                                 </td>

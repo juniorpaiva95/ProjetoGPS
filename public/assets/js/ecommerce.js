@@ -139,10 +139,9 @@ $(function () {
             "sSwfPath": "assets/plugins/datatables/swf/copy_csv_xls_pdf.swf",
             "aButtons": ["csv", "xls", "pdf", "print"]
         };
-        opt.aoColumnDefs = [
-              { 'bSortable': false, 'aTargets': [ 5,6,7 ] }
-           ];
-
+        opt.columnDefs = [
+            { targets: 'no-sort', orderable: false }
+        ];
 
         var oTable = $('#products-table').dataTable(opt);
         oTable.fnDraw();
