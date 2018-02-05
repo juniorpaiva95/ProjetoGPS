@@ -18,7 +18,7 @@ class CheckoutController extends Controller
         return view('pedido::checkout')->with(
             [
                 'items'=>Cart::instance('default')->content(),
-                'total' => Cart::subtotal()
+                'total' => Cart::subtotal(2,',','.')
             ]);
     }
 

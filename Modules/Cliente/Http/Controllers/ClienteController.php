@@ -1,12 +1,12 @@
 <?php
 
-namespace Modules\Pedido\Http\Controllers;
+namespace Modules\Cliente\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
 
-class PedidoController extends Controller
+class ClienteController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class PedidoController extends Controller
      */
     public function index()
     {
-        return view('pedido::index');
+        return view('cliente::index');
     }
 
     /**
@@ -23,7 +23,7 @@ class PedidoController extends Controller
      */
     public function create()
     {
-        return view('pedido::create');
+        return view('cliente::create');
     }
 
     /**
@@ -33,7 +33,6 @@ class PedidoController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->all());
     }
 
     /**
@@ -42,7 +41,7 @@ class PedidoController extends Controller
      */
     public function show()
     {
-        return view('pedido::show');
+        return view('cliente::show');
     }
 
     /**
@@ -51,7 +50,7 @@ class PedidoController extends Controller
      */
     public function edit()
     {
-        return view('pedido::edit');
+        return view('cliente::edit');
     }
 
     /**
