@@ -15,7 +15,11 @@ class CreatePedidosTable extends Migration
     {
         Schema::create('pedidos', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('cliente_id')->unsigned()->nullable();
             $table->enum('status', ['payment-received','waiting-payment','fraud','payment-canceled','']);
+            $table->foreign('cliente_id')
+                ->references('id')->on('clientes')
+                ->onDelete('cascade');
             $table->timestamps();
         });
     }

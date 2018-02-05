@@ -16,6 +16,9 @@
                     </li>
                 </ul>
             </li>
+            <li>
+                <a href="{{ route('cliente.index') }}"><i class="fa fa-group"></i><span class="sidebar-text">Clientes</span></a>
+            </li>
         </ul>
     </div>
     {{--<div class="footer-widget">--}}

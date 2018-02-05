@@ -25,8 +25,6 @@ class HomeController extends Controller
     public function index()
     {
         $pedidos = Pedido::all();
-        $p = Pedido::find(22);
-        $p->totalItens();
         return view('vendor.pixit.ecommerce_dashboard')->with(['pedidos'=>$pedidos]);
     }
 }

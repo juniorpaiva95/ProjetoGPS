@@ -4,6 +4,7 @@ namespace Modules\Pedido\Entities;
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
+use Modules\Cliente\Entities\Cliente;
 use Modules\Produto\Entities\Produto;
 
 class Pedido extends Model
@@ -11,6 +12,10 @@ class Pedido extends Model
     protected $fillable = [
         'status'
     ];
+
+    public function cliente() {
+        return $this->belongsTo(Cliente::class);
+    }
 
     public function itens() {
         return $this->hasMany(PedidoItem::class);

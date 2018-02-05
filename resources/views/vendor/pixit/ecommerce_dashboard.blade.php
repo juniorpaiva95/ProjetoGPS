@@ -199,6 +199,13 @@
             </div>
         </div>
         <div class="row m-b-40 m-t-10">
+            @if(session()->exists('msg'))
+                <div class="">
+                    <div class="col-lg-12 alert alert-success">
+                        <strong>{{session()->get('msg')}}</strong>
+                    </div>
+                </div>
+            @endif
             <div class="col-md-12">
                 <div class="tabcordion">
                     <ul id="myTab" class="nav nav-tabs nav-dark">
@@ -288,7 +295,7 @@
                                             <tr>
                                                 <td>{{ $p->id }}</td>
                                                 <td>{{ $p->created_at }}</td>
-                                                <td><a class="c-blue" href="profil_edit.html">John Addams</a></td>
+                                                <td><a class="c-blue" href="profil_edit.html">{{ $p->cliente->fullName() }}</a></td>
                                                 <td>R$ {{ $p->totalPreco() }}</td>
                                                 <td>{{ $p->totalItens() }}</td>
                                                 <td>02/10/2013</td>
