@@ -2,9 +2,13 @@
 
 namespace Modules\Pedido\Http\Controllers;
 
+use Gloudemans\Shoppingcart\Facades\Cart;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
+use Modules\Pedido\Entities\Pedido;
+use Modules\Pedido\Entities\PedidoItem;
+use Modules\Produto\Entities\Produto;
 
 class PedidoController extends Controller
 {
@@ -33,7 +37,21 @@ class PedidoController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->all());
+        $pedido = new Pedido();
+        $pedido->status = 'waiting-payment';
+        $pedido->save();
+        foreach(Cart::instance('default')->content() as $item){
+            $pi = new PedidoItem();
+            $pi->produto_id = $item->id;
+            $pi->quantidade = $item->qty;
+            $pi->pedido_id = $pedido->id;
+            $pi->preco_unit = $item->price;
+            $pi->save();
+        }
+        Cart::destroy();
+        return redirect('/home');
+
+
     }
 
     /**

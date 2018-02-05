@@ -93,6 +93,10 @@
                         <div class="tab-pane fade" id="delivery">
                             <form class="form-horizontal" role="form" id="formCheckout" action="{{ route('pedido.store') }}" method="post">
                                 {{ csrf_field() }}
+
+                                @foreach($items as $item)
+                                    <input type="hidden" name="produtos[]" value="{{ $item->id }}">
+                                @endforeach
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="name" class="col-sm-2 control-label required">First Name</label>
@@ -534,6 +538,7 @@
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="shopping-validate">
                                     <button type="submit" class="btn btn-success" id="submitForm"><i class="fa fa-check p-r-10"></i>VALIDATE</button>
                                 </div>
