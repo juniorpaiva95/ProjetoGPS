@@ -5,6 +5,7 @@ namespace Modules\Cliente\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
+use Modules\Cliente\Entities\Cliente;
 
 class ClienteController extends Controller
 {
@@ -14,7 +15,8 @@ class ClienteController extends Controller
      */
     public function index()
     {
-        return view('cliente::index');
+        $clientes = Cliente::paginate(2);
+        return view('cliente::index')->with(['clientes'=> $clientes]);
     }
 
     /**
