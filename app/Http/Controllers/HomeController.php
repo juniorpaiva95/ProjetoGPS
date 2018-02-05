@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Modules\Pedido\Entities\Pedido;
 
 class HomeController extends Controller
 {
@@ -23,6 +24,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('vendor.pixit.ecommerce_dashboard');
+        $pedidos = Pedido::all();
+        $p = Pedido::find(22);
+        $p->totalItens();
+        return view('vendor.pixit.ecommerce_dashboard')->with(['pedidos'=>$pedidos]);
     }
 }
